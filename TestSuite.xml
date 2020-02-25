@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BDD Test Suite" parallel="methods" verbose="1" configfailurepolicy="continue" thread-count="2">
+    <test name="Checkout Scenario on Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.cucumber.testautomation.RunCucumberTest"/>
+        </classes>
+    </test>
+    <test name="Checkout Scenario on Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.cucumber.testautomation.RunCucumberTest"/>
+        </classes>
+    </test>
+</suite>
